@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- Include DataTables CSS and JS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
+    <!-- Your custom script -->
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <h1>User Management</h1>
+
+    <button id="addUser">Add User</button>
+
+    <table id="userTable" class="display">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Date of Birth</th>
+                <th>Status</th>
+                <th>Gender</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- User data will be dynamically loaded here -->
+        </tbody>
+    </table>
+
+    <div id="pagination"></div>
+
+    <!-- Modal for adding/editing user -->
+    <div id="userModal" style="display: none;">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" name="surname">
+
+        <label for="dob">Date of Birth:</label>
+        <input type="text" id="dob" name="dob">
+
+        <label for="status">Status:</label>
+        <select id="status" name="status">
+            <option value="active">Active</option>
+            <option value="inactive">Inactive</option>
+        </select>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+
+        <button id="saveUser">Save</button>
+        <button id="cancelUser">Cancel</button>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="upload.js"></script>
+</head>
+<body>
+
+<input type="file" id="fileInput">
+<button id="uploadButton">Upload</button>
+<div id="messageContainer"></div>
+
+<style>
+    .message {
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+    }
+
+    .success {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    .error {
+        background-color: #f44336;
+        color: white;
+    }
+
+    .info {
+        background-color: #2196F3;
+        color: white;
+    }
+
+    .warning {
+        background-color: #FFC107;
+        color: black;
+    }
+</style>
+
+</body>
+</html>
